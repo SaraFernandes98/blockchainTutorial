@@ -3,7 +3,6 @@ jobs:
   compile:
     image: node
     script:
-      - npm init
       - npm install truffle
       - npx truffle compile
   test:
