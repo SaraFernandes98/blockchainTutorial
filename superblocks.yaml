@@ -3,6 +3,9 @@ jobs:
   compile:
     image: node
     script:
+      - git add package-lock.json
+      - git commit -m "package-lock"
+      - git push
       - npm install truffle
       - npx truffle compile
   test:
